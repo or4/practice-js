@@ -1,4 +1,4 @@
-import { sum } from './task-1.sum';
+import { sum } from './example-1.sum';
 
 describe('Testing sum with 2 arguments', () => {
 	it('should 3', () => {
