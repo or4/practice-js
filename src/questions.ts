@@ -1,7 +1,7 @@
 // Что такое цикл событий?
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/EventLoop
 
-// Что такое всплытие и перехват
+// Что такое всплытие и перехват (event bubbling)
 // https://learn.javascript.ru/event-bubbling
 
 // Что такое замыкание?
@@ -11,7 +11,9 @@
 // Иногда спрашивают, но редко вопрос в приоритете
 // Прототипное наследование https://developer.mozilla.org/ru/docs/Learn/JavaScript/Объекты/Inheritance
 
-// Как работает ключевое слово this?
+// Что такое контекст. Как работает ключевое слово this? Разница function и стрелочными функциями
+
+// Что такое hoisting
 
 // Что такое REST?
 

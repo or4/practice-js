@@ -3,6 +3,12 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"keywords": [
+		"javascript",
+		"typescript",
+		"jest",
+		"junior"
+	],
 	"scripts": {
 		"test": "jest --watch"
 	},

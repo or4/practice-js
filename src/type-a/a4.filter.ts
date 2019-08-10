@@ -1,5 +1,5 @@
 /*
- * Задача 4: Создайте собственную реализацию функции filter().
+ * Задача a4: Создайте собственную реализацию функции filter().
  * Напишите тесты.
  */
 export function filter(arr: number[], func: (item: number) => boolean): boolean {
