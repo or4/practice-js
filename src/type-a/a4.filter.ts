@@ -2,8 +2,14 @@
  * Задача a4: Создайте собственную реализацию функции filter().
  * Напишите тесты.
  */
-export function filter(arr: number[], func: (item: number) => boolean): boolean {
-	return false;
+export function filter(arr: number[], func: (item: number) => boolean): number[] {
+	let newArr: number[] = [];
+	for (let i = 0; i < arr.length; i++) {
+		if (func(arr[i])) {
+			newArr.push(arr[i]);
+		}
+	}
+	return newArr;
 }
 
 /*

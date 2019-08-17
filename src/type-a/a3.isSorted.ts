@@ -4,7 +4,23 @@
  * Напишите тесты.
  */
 export function isSorted(arr: number[]): boolean {
-	return false;
+	if (arr.length === 0) return true;
+
+  let arrEntered = arr;
+  let arrFotSort = arrEntered.slice(0);
+  
+
+  arrFotSort.sort((a: number, b: number): any => {
+    if (a - b > 0) return 1;
+    if (a - b < 0) return -1;
+  });
+
+ 
+  let str1 = arrFotSort.join('');
+  let str2 = arrEntered.join('');
+  
+  if (str1 === str2) return true;
+  return false;
 }
 
 /*
