@@ -3,6 +3,7 @@
  * Не пользуйтесь встроенной функцией reverse().
  * Напишите тесты.
  */
+<<<<<<< HEAD
 export function reverse(str: string): string {
 	let newArr: any = [];
 	let strArr = str.split('');
@@ -13,6 +14,9 @@ export function reverse(str: string): string {
 	let newStr: string = newArr.join('');
 	return newStr;
 }
+=======
+
+>>>>>>> 55b2e7aa7f884bcc5b7b170ee1186a759aa8d443
 /*
 	Примеры:
 

@@ -4,6 +4,7 @@
  * Напишите тесты.
  */
 export function fib(value: number): number {
+<<<<<<< HEAD
 	if (value === 0) return 0;
 
 	let a = 0,
@@ -36,6 +37,11 @@ export function fib(value: number): number {
 // }
 
 // const memoizedFib = memoize(fib)
+=======
+	return value;
+}
+
+>>>>>>> 55b2e7aa7f884bcc5b7b170ee1186a759aa8d443
 /*
 	Примеры:
 

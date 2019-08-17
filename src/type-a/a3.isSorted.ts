@@ -4,6 +4,7 @@
  * Напишите тесты.
  */
 export function isSorted(arr: number[]): boolean {
+<<<<<<< HEAD
 	if (arr.length === 0) return true;
 
   let arrEntered = arr;
@@ -21,6 +22,9 @@ export function isSorted(arr: number[]): boolean {
   
   if (str1 === str2) return true;
   return false;
+=======
+	return false;
+>>>>>>> 55b2e7aa7f884bcc5b7b170ee1186a759aa8d443
 }
 
 /*

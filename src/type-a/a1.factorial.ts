@@ -3,6 +3,7 @@
  * Напишите тесты.
  */
 export function factorial(value: number): number {
+<<<<<<< HEAD
 	if (value === 0) {
 		return 1;
 	} 
@@ -16,6 +17,11 @@ export function factorial(value: number): number {
 }
 
 
+=======
+	return value;
+}
+
+>>>>>>> 55b2e7aa7f884bcc5b7b170ee1186a759aa8d443
 /*
 	Примеры:
 
