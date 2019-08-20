@@ -4,7 +4,17 @@
  * Напишите тесты.
  */
 export function isSorted(arr: number[]): boolean {
-	return false;
+	if (arr.length === 0) return true;
+
+	let arrEntered = arr;
+	let arrFotSort = arrEntered.slice(0);
+
+	arrFotSort.sort((a: number, b: number): number => a - b);
+
+	let str1 = arrFotSort.join('');
+	let str2 = arrEntered.join('');
+
+	return str1 === str2;
 }
 
 /*

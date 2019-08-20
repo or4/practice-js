@@ -3,6 +3,17 @@
  * Необходимо написать функцию, используя методы Math.max и function.apply.
  * Напишите тесты.
  */
+//здесь мы собираем в массив все переданные аргументы с помощью "...". И передаем этот массив "apply". "Apply" работает с массивом аргументов
+export function maxWithRest(...args: number[]): number {
+	return Math.max.apply(Math, args);
+}
+// еще можно решить эту задачу с помощью arguments, но я не знаю как задать правильно тип для arguments в Ts, поэтому выдаёт ошибку. Написанный на Js код - работает
+
+/*
+export function maxWithRest(): number {
+	return Math.max.apply(Math, arguments);
+} 
+*/
 
 /*
 	Примеры:

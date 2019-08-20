@@ -3,7 +3,17 @@
  * Напишите тесты.
  */
 export function factorial(value: number): number {
-	return value;
+	if (value === 0) {
+		return 1;
+	}
+
+	let val = 1;
+
+	for (let i = 1; i <= value; i++) {
+		val *= i;
+	}
+
+	return val;
 }
 
 /*

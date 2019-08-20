@@ -3,7 +3,14 @@
  * является ли переданная ей строка палиндромом (функция нечувствительна к регистру и к наличию в строке пробелов).
  * Напишите тесты.
  */
+export function isPalindrome(str: string): boolean {
+	const strForComparison: string = str.toLowerCase().replace(/\s/g, '');
+	const strReverse: string = Array.from(strForComparison)
+		.reverse()
+		.join('');
 
+	return strForComparison === strReverse;
+}
 /*
 	Примеры:
 
