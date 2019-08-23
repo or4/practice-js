@@ -11,7 +11,7 @@ export function maxWithRest(...args: number[]): number {
 
 /*
 export function maxWithRest(): number {
-	return Math.max.apply(Math, arguments);
+	return Math.max.apply(null, arguments);
 } 
 */
 

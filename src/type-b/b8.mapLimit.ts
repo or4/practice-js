@@ -24,3 +24,33 @@
 	const limit = 5; // количество одновременно запущенных запросов
 	mapLimit(urls, limit);
 */
+const urls: string[] = [
+	'http://test1.ru',
+	'http://test2.ru',
+	'http://test3.ru',
+	'http://test4.ru',
+	'http://test5.ru',
+	'http://test6.ru',
+	'http://test7.ru',
+	'http://test8.ru',
+	'http://test9.ru',
+];
+
+// Я не писал тесты к этой задаче потому, что не знаю как писать с промисами:) Поэтому не знаю, работает ли этот код.
+// Посмотри, пожайлуста, на решение. В правильном ли я направлении думаю?
+function mapLimit(arr: any[], limit: number) {
+	const arrOfSubarrays: any[] = [];
+	const arrResults: any[] = [];
+
+	for (let i = 0; i < Math.ceil(arr.length / limit); i++) {
+		arrOfSubarrays[i] = urls.slice(i * limit, i * limit + limit);
+	}
+
+	for (let i = 0; i < arrOfSubarrays.length; i++) {
+		Promise.all(arrOfSubarrays[i].then((results: any) => arrResults.push(results)));
+	}
+
+	return arrResults;
+}
+
+mapLimit(urls, 5);
