@@ -5,7 +5,7 @@
  */
 //здесь мы собираем в массив все переданные аргументы с помощью "...". И передаем этот массив "apply". "Apply" работает с массивом аргументов
 export function maxWithRest(...args: number[]): number {
-	return Math.max.apply(Math, args);
+	return Math.max.apply(null, args);
 }
 // еще можно решить эту задачу с помощью arguments, но я не знаю как задать правильно тип для arguments в Ts, поэтому выдаёт ошибку. Написанный на Js код - работает
 
