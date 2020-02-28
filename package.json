@@ -13,7 +13,7 @@
 		"test": "jest --watch"
 	},
 	"devDependencies": {
-		"@types/jest": "^24.0.17",
+		"@types/jest": "24.0.17",
 		"@typescript-eslint/eslint-plugin": "1.13.0",
 		"@typescript-eslint/parser": "1.13.0",
 		"eslint": "5.16.0",
@@ -21,12 +21,13 @@
 		"eslint-config-react-app": "4.0.1",
 		"eslint-plugin-prettier": "3.1.0",
 		"eslint-plugin-react": "7.14.3",
-		"eslint-utils": "^1.4.1",
-		"jest": "^24.8.0",
+		"eslint-utils": "1.4.1",
+		"jest": "24.8.0",
 		"prettier": "1.18.2",
 		"tslint": "5.18.0",
-		"typescript": "^3.5.3",
-		"ts-jest": "^24.0.2"
+		"typescript": "3.5.3",
+		"ts-jest": "24.0.2",
+		"handlebars": ">=4.3.0"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
