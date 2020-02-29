@@ -6,8 +6,6 @@ export function factorial(value: number): number {
 		return 1;
 	}
 
-	// return value * factorial(value - 1);
-
 	let sum = 1;
 
 	for (let index = 2; index <= value; index++) {
