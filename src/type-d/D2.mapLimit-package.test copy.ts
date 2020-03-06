@@ -9,6 +9,40 @@
  * Напишите тесты.
  */
 
+// const fetch = (url: string): Promise<string> => {
+// 	return new Promise(resolve => {
+// 		setTimeout(() => {
+// 			resolve(`data for url: ${url}`);
+// 		}, 100);
+// 	});
+// };
+
+// export function mapLimit(urls: string[], size: number): Promise<string[]> {
+// 	return new Promise(resolve => {
+//         Promise.all(urls.map(fetch));
+
+// 		return resolve(urls);
+// 	});
+// }
+
+// describe('localStorage async getItem', () => {
+// 	const key = 'test-key';
+
+// 	it('should return promise', () => {
+// 		const promise = getItem(key);
+
+// 		expect(promise instanceof Promise).toBe(true);
+// 	});
+
+// 	it('should return value', async done => {
+// 		const value = await getItem(key);
+
+// 		expect(value).toBe(`${key}-value`);
+
+// 		done();
+// 	});
+// });
+
 /*
 	Примеры:
 	const urls = ['http://test1.ru',

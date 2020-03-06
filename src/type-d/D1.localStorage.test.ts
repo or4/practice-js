@@ -1,5 +1,5 @@
 /*
- * B1: Write function that get asynchrony data from localstorage
+ * D1: Write function that get asynchrony data from localstorage
  */
 const localStorage = {
 	getItem: (key: string) => `${key}-value`,

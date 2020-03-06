@@ -3,6 +3,10 @@
 
 // Что такое всплытие и перехват (event bubbling)
 // https://learn.javascript.ru/event-bubbling
+// Всплытие и перехват
+// Чтобы поймать событие на стадии перехвата, нужно использовать третий аргумент addEventListener:
+// Если аргумент true, то событие будет перехвачено по дороге вниз.
+// Если аргумент false, то событие будет поймано при всплытии.
 
 // Что такое замыкание?
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures
