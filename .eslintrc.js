@@ -11,23 +11,16 @@ module.exports =  {
 		sourceType:  'module',  // Allows for the use of imports
 	},
 	rules: {
-		"@typescript-eslint/explicit-function-return-type": 0,
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "@typescript-eslint/no-explicit-any": 0,
 		"react/prop-types": [2, { ignore: ['children'] }],
-		"@typescript-eslint/no-unused-vars": 2,
-		"@typescript-eslint/no-var-requires": 2,
+		"@typescript-eslint/no-var-requires": 0,
 		"@typescript-eslint/no-use-before-define": 0,
 		"@typescript-eslint/interface-name-prefix": 0,
-		'no-console': ['error', {allow: ['warn', 'error', 'info']}],
-		'newline-before-return': 'error',
-		'padding-line-between-statements': ['error',
-			{ blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
-			{ blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] },
-		]
-	},
-	settings: {
-		react: {
-			pragma: "React",
-			version: "16.8.6"
-		}
-	}
+    },
+    settings: {
+        react: {
+            version: require('./package.json').dependencies.react,
+        },
+    },
 };

@@ -1,8 +1,7 @@
-module.exports =  {
-	semi:  true,
-	trailingComma:  'all',
-	singleQuote:  true,
-	printWidth:  120,
-	tabWidth:  4,
-	useTabs: true
-  };
+module.exports = {
+    printWidth: 120,
+    trailingComma: 'es5',
+    useTabs: false,
+    tabWidth: 4,
+    singleQuote: true,
+};
