@@ -1,4 +1,4 @@
-async function myFetchUrl1(url: string): Promise<string> {
+async function fetch(url: string): Promise<string> {
     return new Promise(resolve => {
         setTimeout(function() {
             resolve(`data: ${url}`);
@@ -11,7 +11,7 @@ function promiseAll(urls: string[]) {
         const output: string[] = [];
 
         for (let index = 0; index < urls.length; index++) {
-            myFetchUrl1(urls[index])
+            fetch(urls[index])
                 .then(data => {
                     output[index] = data;
 
