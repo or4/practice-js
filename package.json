@@ -28,7 +28,7 @@
 		"tslint": "5.18.0",
 		"typescript": "3.5.3",
 		"ts-jest": "24.0.2",
-		"handlebars": ">=4.3.0"
+		"handlebars": ">=4.7.7"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
